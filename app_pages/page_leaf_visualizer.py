@@ -9,11 +9,12 @@ from matplotlib.image import imread
 import itertools
 import random
 
-def leaf_comparison_content():
+def page_leaf_visualizer_content():
     """Contents of Leaf Comparison"""
     st.write("### Leaf Comparison")
     st.info(
-        f"* The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew."
+        f"* The client is interested in conducting a study to visually differentiate "
+        f"a healthy cherry leaf from one that contains powdery mildew."
         
     )
     version = 'v1'

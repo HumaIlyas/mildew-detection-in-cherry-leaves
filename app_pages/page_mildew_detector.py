@@ -11,14 +11,12 @@ from src.machine_learning.predictive_analysis import (
                                                     )
 
 
-def mildew_detector_content():
+def page_mildew_detector_content():
     """
     Contents of Mildew Detector
     """
     st.write("### Mildew Detector")
     st.info(
-        f"* The client is interested in conducting a study to visually differentiate a healthy"
-        f"cherry leaf from one with powdery mildew.\n"
         f"* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew."
         )
 

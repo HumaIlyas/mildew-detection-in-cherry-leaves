@@ -1,9 +1,9 @@
 import streamlit as st
 
 
-def exec_summary_content():
+def page_summary_content():
     """Contents of Exec Summary"""
-    st.write("### Executive Summary")
+    st.write("### Project Summary")
     
     st.info(
         f"**General Information**\n"
@@ -18,7 +18,7 @@ def exec_summary_content():
         f"* The powdery appearance results from the superficial growth of the fungus as" f"thread-like strands (hyphae) over the plant surface and the production of chains of"
         f"spores (conidia). Colonies vary in appearance from fluffy and white to sparse and gray.\n\n"
         f"**Project Dataset**\n"
-        f"* The available dataset contains 4208 images of cherry leaves:\n"
+        f"* The available dataset contains +4 thousand images of cherry leaves taken from the client's crop fields:\n"
         f"* 2104 images of cherry leaves which are healthy\n"
         f"* 2104 images of cherry leaves containing powdery mildew\n"
         f"* For additional information about the data, please visit "
@@ -30,7 +30,8 @@ def exec_summary_content():
 
 
     st.success(
-        f"The project has 2 business requirements:\n"
+        f"**Business requirements**\n"
+        f"* The project has 2 business requirements:\n"
         f"* The client is interested in conducting a study to visually differentiate "
         f"a cherry leaf that is healthy from one that contains powdery mildew.\n"
         f"* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew. "
