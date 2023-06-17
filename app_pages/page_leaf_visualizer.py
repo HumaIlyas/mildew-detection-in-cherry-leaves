@@ -10,8 +10,10 @@ import itertools
 import random
 
 def page_leaf_visualizer_content():
-    """Contents of Leaf Comparison"""
-    st.write("### Leaf Comparison")
+    """
+    Contents of Leaf Visualiser
+    """
+    st.write("### Leaf Visualiser")
     st.info(
         f"* The client is interested in conducting a study to visually differentiate "
         f"a healthy cherry leaf from one that contains powdery mildew."

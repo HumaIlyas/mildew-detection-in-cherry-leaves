@@ -13,9 +13,9 @@ from src.machine_learning.predictive_analysis import (
 
 def page_mildew_detector_content():
     """
-    Contents of Mildew Detector
+    Contents of Mildew Detection
     """
-    st.write("### Mildew Detector")
+    st.write("### Mildew Detection")
     st.info(
         f"* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew."
         )

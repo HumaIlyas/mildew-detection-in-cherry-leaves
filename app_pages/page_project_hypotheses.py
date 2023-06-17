@@ -1,9 +1,11 @@
 import streamlit as st
 
 
-def project_hypothesis_content():
-    """Contents of Project Hypothesis"""
-    st.write("### Project Hypothesis")
+def page_project_hypotheses_content():
+    """
+    Contents of Project Hypotheses
+    """
+    st.write("### Project Hypotheses")
     st.info(
         "1. We suggest that images of Cherry leaves with powdery mildew will have enough differences compared to those without the disease in order to train the model with an image dataset. \n"
         "2. A company analysis showed that it takes 30 minutes to evaluate a Cherry tree manually for signs of powdery Mildew. We propose that using image recognition will produce a vast time-benefit for the company and ensure that the detection of mildew is scalable. \n"

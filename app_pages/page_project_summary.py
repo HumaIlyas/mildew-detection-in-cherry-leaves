@@ -1,8 +1,10 @@
 import streamlit as st
 
 
-def page_summary_content():
-    """Contents of Exec Summary"""
+def page_project_summary_content():
+    """
+    Contents of Project Summary
+    """
     st.write("### Project Summary")
     
     st.info(

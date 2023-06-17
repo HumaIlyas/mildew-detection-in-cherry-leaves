@@ -5,9 +5,11 @@ from matplotlib.image import imread
 from src.machine_learning.evaluate import load_test_evaluation
 
 
-def page_ml_metrics_content():
-    """Contents of ML Metrics"""
-    st.write("### ML Metrics")
+def page_ml_performance_metrics_content():
+    """
+    Contents of ML Performance Metrics
+    """
+    st.write("### ML Performance Metrics")
     version = 'v1'
 
     st.write("### Train, Validation and Test Set: Labels Frequencies")
