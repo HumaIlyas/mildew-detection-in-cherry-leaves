@@ -20,7 +20,9 @@ def exec_summary_content():
         f"**Project Dataset**\n"
         f"* The available dataset contains 4208 images of cherry leaves:\n"
         f"* 2104 images of cherry leaves which are healthy\n"
-        f"* 2104 images of cherry leaves containing powdery mildew")
+        f"* 2104 images of cherry leaves containing powdery mildew\n"
+        f"* For additional information about the data, please visit "
+        f"[Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
 
     st.write(
         f"* For additional information, please visit and **read** the "
