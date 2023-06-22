@@ -1,4 +1,31 @@
-# Mildew Detection in Cherry Leaves
+# Image Identification
+
+**Mildew Detection in Cherry Leaves**
+The Battleships Game is based on the classic pen and paper game. More information about this game can be found at [Battleships Game](<https://en.wikipedia.org/wiki/Battleship_(game)>). This version of the game is designed for one player to play against the computer with randomly generated battleship locations on a grid. The player can try to beat the computer by hitting more batteleships of the computer before the computer hits the player's batteleships.
+
+## [View live website](https://project-3-battleships-game.herokuapp.com/)
+
+---
+
+## Table of contents
+- [Image Identification](#image-identification)
+  - [Dataset Content](#dataset-content)
+  - [Business Requirements](#business-requirements)
+  - [Hypotheses and how to validate](#hypotheses-and-how-to-validate)
+  - [The rationale to map the business requirements](#the-rationale-to-map-the-business-requirements)
+  - [ML Business Case](#ml-business-case)
+  - [Dashboard Design](#dashboard-design)
+    - [Project Summary](#project-summary)
+    - [Leaf Visualiser](#leaf-visualiser)
+    - [Mildew Detection](#mildew-detection)
+    - [Project Hypothesis](#project-hypothesis)
+    - [ML Performance Metrics](#ml-performance-metrics)
+- [Unfixed bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+- [Data Analysis and Machine Learning Libraries](#data-analysis-and-machine-learning-libraries)
+- [Credits](#credits)
+
+---
 
 ## Dataset Content
 
@@ -6,6 +33,8 @@ The main contents of the dataset are disussed in this section.
 
 - The dataset is taken from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves), and it is provided by Code Institute for the purpose of this portfolio project. I have created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 - The dataset contains more than 4 thousand images taken from the client's crop fields. About 50% of the images show healthy cherry leaves and 50% of the images show the cherry leaves containing powdery mildew. Powdery mildew a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio; therefore, the company is concerned about supplying the market with a compromised quality product.
+
+---
 
 ## Business Requirements
 
@@ -18,7 +47,9 @@ The business requirements are:<br>
 powdery mildew.<br>
 2 - The client is interested in predicting if a cherry tree is healthy or contains powdery mildew.
 
-## Hypothesis and how to validate?
+---
+
+## Hypotheses and how to validate
 
 In this section are project hypotheses and the methods to validate them.<br>
 1- I suggest that images of cherry leaves with powdery mildew will have enough differences compared to those without the disease in order to train the model with an image dataset.
@@ -35,9 +66,12 @@ In this section are project hypotheses and the methods to validate them.<br>
 - The binary classification will be the best way to determine the difference between infected and uninftected leaves.
 - Upload of images to determine infection will be included in the dashboard.
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+---
 
-The business requirements of the project and a rationale to map them to the Data Visualisations and ML tasks are provided below.
+## The rationale to map the business requirements
+
+**The rationale to map the business requirements to the Data Visualisations and ML tasks**
+The business requirements of image identification and a rationale to map them to the Data Visualisations and ML tasks are provided below.
 
 - **Business Requirement 1**: Data Visualization
 
@@ -48,6 +82,8 @@ The business requirements of the project and a rationale to map them to the Data
 - **Business Requirement 2**: Classification
   - I want to predict if a given leaf is infected or not with powdery mildew.
   - I want to build a binary classifier and generate reports.
+
+---
 
 ## ML Business Case
 
@@ -60,12 +96,16 @@ The business requirements of the project and a rationale to map them to the Data
 - The training data to fit the model come from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). This dataset contains about 4+ thousand images.
   - Train data - target: infected or not; features: all images.
 
-## Dashboard Design (Streamlit App User Interface)
-The dashboard will be consisted five pages provided below.
+---
+## Dashboard Design 
+**Streamlit App User Interface**
+The dashboard is consisted of five pages provided below.
 
-### Page 1: Project Summary
+### Project Summary
+
 **Project summary**
 This page will provide general information about the project, dataset used for data visualization and prediction, link for the additional information, and business requirements.
+
 - **General Information**
   - Powdery Mildew is a fungal disease infecting herbaceous and woody plants, and can result in a low fruit yield in the case of Cherry Trees.
   - Currently, the process is to manually verify if a given cherry tree contains powdery mildew or not. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or contains powdery mildew.
@@ -78,78 +118,97 @@ This page will provide general information about the project, dataset used for d
 - **Link to additional information**
   - Link will be provided for the additional information about the project.
 - **Business requirements**
-    The project has two business requirements:<br>
-    - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
-    - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+  The project has two business requirements:<br>
+  - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+  - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-### Page 2: Leaf Visualiser
+### Leaf Visualiser
+
 This page will provide the details for the answer to business requirement 1.<br>
-  - Checkbox 1 - Difference between average and variability image
-  - Checkbox 2 - Differences between average infected and average uninfected leaves.
-  - Checkbox 3 - Image Montage
 
-### Page 3: Mildew Detection
+- Checkbox 1 - Difference between average and variability image
+- Checkbox 2 - Differences between average infected and average uninfected leaves.
+- Checkbox 3 - Image Montage
+
+### Mildew Detection
+
 This page will provide information about business requirement 2- "The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew."<br>
+
 - Link to download a set of infected and uninfected leaves for live prediction.
 - User Interface with a file uploader widget. The user should upload multiple leaf sample images. It will display the image and a prediction statement, indicating if the leaf is infected or not with powdery mildew and the probability associated with this statement.
 - Table with image name and prediction results.
 - Download button to download table.
 
-### Page 4: Project Hypothesis and Validation
+### Project Hypothesis
 
 This page will describe project hypotheses, conclusion and methods used to validate the hypothesis.
 
-### Page 5: ML Performance Metrics
+### ML Performance Metrics
+
 This page will provide the details for the answer to business requirement 2.<br>
+
 - Label Frequencies for Train, Validation and Test Sets
 - Model History - Accuracy and Losses
 - Model evaluation result
 
+---
+
 ## Unfixed Bugs
-* No unfixed bugs.
 
-## Deployment
+- No unfixed bugs.
 
-### Heroku
+[Back to Table of contents](#table-of-contents)
 
-- The App live link is: https://YOUR_APP_NAME.herokuapp.com/
-- The project was deployed to Heroku using the following steps.
+---
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
+# Deployment
 
-The Battleships Game was deployed using Code Institute's mock terminal for Heroku.
+- The Image Identification was deployed using Code Institute's mock terminal for Heroku.
+
+## Heroku
+
 The steps for deployment were as follows:
-* Fork or clone this repository
-* Create a new Heroku app
-* Set the buildpacks to Python and NodeJS in that order
-* Link the Heroku app to the repository
-* Click on Deploy
 
-## Main Data Analysis and Machine Learning Libraries
+1. Fork or clone this repository
+2. Log in to Heroku and create an App
+3. At the Deploy tab, select GitHub as the deployment method.
+4. Select your repository name and click Search. Once it is found, click Connect.
+5. Select the branch to be deployed, then click Deploy Branch.
+6. The deployment process should happen smoothly if all deployment files are fully functional
+7. Click now the button Open App on the top of the page to access your App.
 
-- Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+## [View live website](https://project-3-battleships-game.herokuapp.com/)
 
-## Credits
+---
+
+# Data Analysis and Machine Learning Libraries
+
+- Here you should main list the libraries used in the project and provide an example(s) of how you used these libraries.
+
+---
+
+# Credits
+
 To complete the contents of Mildew detection in Cherry leaves, I learned coding and collected the information from different sources.
+
 - Learned Python coding from [Code Institute](https://learn.codeinstitute.net/)
 - Used Code Institute student template [template](Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves)
 - Collected information on good and bad coding practices from:
   - [Documenting Python Code](https://realpython.com/documenting-python-code/)
 - The description on the malaria detection in blood cells provided by the tutor of the Code Institute with [Malaria Detection](Code-Institute-Solutions/WalkthroughProject01) and app [Malaria Detector](https://malaria-predictor.onrender.com/) was useful as well as an inspiration to design [Image Identification](https://github.com/HumaIlyas/mildew-detection-image-identification).
 
-[Back to Table of contents](#table-of-contents)
+## Content
 
-### Content
 - The leaf icons in the dashboard.py filw was taken from [Font Awesome](https://fontawesome.com/).
-- The details about the powdery mildew  were found at [Conneticut Portal](https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Powdery-Mildew)
+- The details about the powdery mildew were found at [Conneticut Portal](https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Powdery-Mildew)
 
-### Media
+## Media
+
 - The images used on the Home and News Categories pages for logo and news posts were taken from [Google Images](https://images.google.nl/)
 
-## Acknowledgements (optional)
-- I acknowledge all the tutors fellow students at [Slack](https://app.slack.com/client/T0L30B202/D03PENWED0F) for their guidance to complete Image Identification.
+## Acknowledgements
+
+- I acknowledge all the tutors and fellow students at [Slack](https://app.slack.com/client/T0L30B202/D03PENWED0F) for their guidance and assistance to complete Image Identification.
 - I acknowledge [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for mentor support and finishing touches.
+
+[Back to Table of contents](#table-of-contents)
