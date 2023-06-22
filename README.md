@@ -121,31 +121,35 @@ This page will provide the details for the answer to business requirement 2.<br>
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 
+The Battleships Game was deployed using Code Institute's mock terminal for Heroku.
+The steps for deployment were as follows:
+* Fork or clone this repository
+* Create a new Heroku app
+* Set the buildpacks to Python and NodeJS in that order
+* Link the Heroku app to the repository
+* Click on Deploy
+
 ## Main Data Analysis and Machine Learning Libraries
 
 - Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
 ## Credits
 To complete the contents of Mildew detection in Cherry leaves, I learned coding and collected the information from different sources.
-* Learned Python coding from [Code Institute](https://learn.codeinstitute.net/)
-* Used Code Institute student template [template](Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves)
-* The details about the powdery mildew  were found at [Conneticut Portal](https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Powdery-Mildew)
-* The description on the Malaria detection provided by the tutor of the Code Institute with [Malaria detection](Code-Institute-Solutions/WalkthroughProject01) was useful as well as an inspiration to design Mildew detection.
-* I acknowledge [Adegbenga Adeye](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/) for mentor support and finishing touches.
+- Learned Python coding from [Code Institute](https://learn.codeinstitute.net/)
+- Used Code Institute student template [template](Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves)
+- Collected information on good and bad coding practices from:
+  - [Documenting Python Code](https://realpython.com/documenting-python-code/)
+- The description on the malaria detection in blood cells provided by the tutor of the Code Institute with [Malaria Detection](Code-Institute-Solutions/WalkthroughProject01) and app [Malaria Detector](https://malaria-predictor.onrender.com/) was useful as well as an inspiration to design [Image Identification](https://github.com/HumaIlyas/mildew-detection-image-identification).
 
 [Back to Table of contents](#table-of-contents)
 
 ### Content
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
-- The text for the Home page was taken from [The Connecticut Agricultural Experiment Station](https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Powdery-Mildew)
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- The leaf icons in the dashboard.py filw was taken from [Font Awesome](https://fontawesome.com/).
+- The details about the powdery mildew  were found at [Conneticut Portal](https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Powdery-Mildew)
 
 ### Media
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- The images used on the Home and News Categories pages for logo and news posts were taken from [Google Images](https://images.google.nl/)
 
 ## Acknowledgements (optional)
-- Thank the people that provided support throughout this project.
+- I acknowledge all the tutors fellow students at [Slack](https://app.slack.com/client/T0L30B202/D03PENWED0F) for their guidance to complete Image Identification.
+- I acknowledge [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for mentor support and finishing touches.
