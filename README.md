@@ -106,8 +106,7 @@ This page will provide the details for the answer to business requirement 2.<br>
 - Model evaluation result
 
 ## Unfixed Bugs
-
-There are no unfixed bugs.
+* No unfixed bugs.
 
 ## Deployment
 
@@ -127,6 +126,14 @@ There are no unfixed bugs.
 - Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
 ## Credits
+To complete the contents of Mildew detection in Cherry leaves, I learned coding and collected the information from different sources.
+* Learned Python coding from [Code Institute](https://learn.codeinstitute.net/)
+* Used Code Institute student template [template](Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves)
+* The details about the powdery mildew  were found at [Conneticut Portal](https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Powdery-Mildew)
+* The description on the Malaria detection provided by the tutor of the Code Institute with [Malaria detection](Code-Institute-Solutions/WalkthroughProject01) was useful as well as an inspiration to design Mildew detection.
+* I acknowledge [Adegbenga Adeye](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/) for mentor support and finishing touches.
+
+[Back to Table of contents](#table-of-contents)
 
 ### Content
 - The text for the Home page was taken from Wikipedia Article A.
