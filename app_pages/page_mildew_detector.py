@@ -17,18 +17,21 @@ def page_mildew_detector_content():
     """
     st.write("### Mildew Detection")
     st.info(
-        f"* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew."
+        f"* The client is interested in predicting if a cherry leaf is healthy "
+        f"or contains powdery mildew."
         )
 
     st.write(
-        f"* You can download a set of healthy and uninfected cells for live prediction. "
-        f"You can download the images from [here](https://www.kaggle.com/ccodeinstitute/cherry-leaves)"
+        f"* You can download a set of healthy and uninfected cells for live "
+        f"prediction. "
+        f"You can download the images from "
+        f"[here](https://www.kaggle.com/ccodeinstitute/cherry-leaves)"
         )
 
     st.write("---")
 
     images_buffer = st.file_uploader('Upload Cherry Leaf image samples. You may select more than one.',
-                                        type='png',accept_multiple_files=True)
+                                        type='png', accept_multiple_files=True)
    
     if images_buffer is not None:
         df_report = pd.DataFrame([])
