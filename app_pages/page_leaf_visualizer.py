@@ -49,7 +49,7 @@ def page_leaf_visualizer_content():
             )
         if st.button("Update Montage"):      
             image_montage(dir_path= my_data_dir + '/validation',
-                          label_to_display=label_to_display, ,
+                          label_to_display=label_to_display,
                           nrows=8, ncols=3, figsize=(10,25))
         st.write("---")
 
