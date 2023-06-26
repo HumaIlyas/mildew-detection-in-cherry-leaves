@@ -50,7 +50,7 @@ The business requirements are:<br>
 
 ## Hypotheses and how to validate
 
-In this section are project hypotheses and the methods to validate them.<br>
+Project hypotheses and the methods to validate them are described below. The detailed validation process will be displayed in the dashboad.<br>
 1- I suspect that mildew-contained cherry leaves have clear signs on their surface to differentiate them from the uninfected leaves.
 - An average image and varability image study can help to investigate it.
 
@@ -89,7 +89,7 @@ The business requirements of image identification and a rationale to map them to
 - I want a ML model to predict if a leaf is infected with powdery mildew or not, based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
 - My ideal outcome is provide the Farmy foods team a faster method of determining if a plant is infected with powdery mildew or not.
 - The model success metrics are:
-  - Accuracy of 65% or above on the test set.
+  - Accuracy of 97% on the train set as well as on the test set.
 - The model output is defined as a flag, indicating if the leaf is infected with powdery mildew or not and the associated probability of being infected or not. The Farmy foods staff will do the inspection of the leaf as usual and upload the picture to the App. The prediction is made on the fly (not in batches).
 - **Heuristics:** Currently, the process is to manually verify if a given cherry tree contains powdery mildew or not. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. Although the staff require some training to detect the occurrance of disease in detail, the image analysis, sample collection and processing will be faster and could be performed by staff with less expertise.
 - The training data to fit the model come from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). This dataset contains about 4+ thousand images.
