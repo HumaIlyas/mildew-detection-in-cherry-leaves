@@ -51,19 +51,19 @@ The business requirements are:<br>
 ## Hypotheses and how to validate
 
 In this section are project hypotheses and the methods to validate them.<br>
-1- I suggest that images of cherry leaves with powdery mildew will have enough differences compared to those without the disease in order to train the model with an image dataset.
+1- I suspect that mildew-contained cherry leaves have clear signs on their surface to differentiate them from the uninfected leaves.
+- An average image and varability image study can help to investigate it.
 
-- The dataset will be analysed, using test, train, and validation techniques to investigate the accuracy of image identification.
+2- I suggest that images of mildew-contained cherry leaves will have enough differences compared with uninfected leaves in order to train the model with an image dataset.
+
+- The dataset will be analysed using train, validation, and test techniques to investigate the accuracy of image identification.
 
 2- Based on the company analysis, the manual evaluation of a cherry tree takes 30 minutes for only a few samples of tree leaves to verify that the leaf tree is healthy or has powdery mildew. This study will not only be beneficial for the comapany to reduce the time required to visualize the disease, but also ensure that the detection of mildew is scalable.
 
-- An average image study can help to investigate it.
 - The detailed validation process will be displayed in the dashboad.
 
 3- The sample dataset contains images classified as infected and uninfected leaves.
-
 - The binary classification will be the best way to determine the difference between infected and uninftected leaves.
-- Upload of images to determine infection will be included in the dashboard.
 
 ---
 
