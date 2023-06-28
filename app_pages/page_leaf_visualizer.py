@@ -41,16 +41,16 @@ def page_leaf_visualizer_content():
         st.image(diff_between_avgs, caption='Difference between average images')
         
     if st.checkbox("Image Montage"):
-        st.write("* To update the montage, please click 'Update Montage'")
+        st.write("* To update the montage, please click 'Create Montage'")
         my_data_dir = 'inputs/mildew_dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
         label_to_display = st.selectbox(
-            label="Choose label", options=labels, index=0
+            label="Select label", options=labels, index=0
             )
-        if st.button("Update Montage"):      
-            image_montage(dir_path= my_data_dir + '/validation',
+        if st.button("Create Montage"):      
+            image_montage(dir_path=my_data_dir + '/validation',
                           label_to_display=label_to_display,
-                          nrows=8, ncols=3, figsize=(10,25))
+                          nrows=8, ncols=3, figsize=(10, 25))
         st.write("---")
 
 
@@ -73,12 +73,10 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
                 f"You requested a montage with {nrows * ncols} spaces")
             return
     
-
         # create list of axes indices based on nrows and ncols
         list_rows = range(0, nrows)
         list_cols = range(0, ncols)
         plot_idx = list(itertools.product(list_rows, list_cols))
-
 
         # create a Figure and display images
         fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=figsize)
@@ -93,7 +91,6 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     
         st.pyplot(fig=fig)
         # plt.show()
-    
     
     else:
         print("The label you selected doesn't exist.")

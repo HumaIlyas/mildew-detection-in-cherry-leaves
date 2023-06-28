@@ -31,7 +31,7 @@ def page_mildew_detector_content():
     st.write("---")
 
     images_buffer = st.file_uploader('Upload Cherry Leaf image samples. You may select more than one.',
-                                        type='png', accept_multiple_files=True)
+                                     type='JPG', accept_multiple_files=True)
    
     if images_buffer is not None:
         df_report = pd.DataFrame([])
@@ -47,8 +47,7 @@ def page_mildew_detector_content():
             pred_prob, pred_class = load_model_and_predict(resized_img, version=version)
             plot_predictions_probabilities(pred_prob, pred_class)
 
-            df_report = df_report.append({"Name":image.name, 'Result': pred_class },
-                                        ignore_index=True)
+            df_report = df_report.append({"Name":image.name, 'Result': pred_class}, ignore_index=True)
         
         if not df_report.empty:
             st.success("Analysis Report")
