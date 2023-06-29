@@ -16,14 +16,14 @@ def plot_predictions_probabilities(pred_prob, pred_class):
         data=[0, 0],
         index={'Healthy': 0, 'Powdery Mildew': 1}.keys(),
         columns=['Probability']
-        )
+    )
     prob_per_class.loc[pred_class] = pred_prob
     for x in prob_per_class.index.to_list():
         if x not in pred_class:
             prob_per_class.loc[x] = 1 - pred_prob
     prob_per_class = prob_per_class.round(3)
     prob_per_class['Diagnostic'] = prob_per_class.index
-    
+
     fig = px.bar(
         prob_per_class,
         x='Diagnostic',
@@ -33,7 +33,7 @@ def plot_predictions_probabilities(pred_prob, pred_class):
     st.plotly_chart(fig)
 
 
-def resize_input_image(img, version):  
+def resize_input_image(img, version):
     """
     Reshape image to average image size
     """
@@ -54,13 +54,12 @@ def load_model_and_predict(new_image, version):
     pred_prob = model.predict(new_image)[0, 0]
 
     target_map = {v: k for k, v in {'Healthy': 0, 'Powdery Mildew': 1}.items()}
-    pred_class =  target_map[pred_prob > 0.5]
+    pred_class = target_map[pred_prob > 0.5]
     if pred_class == target_map[0]:
         pred_prob = 1 - pred_prob
-
 
     st.write(
         f"The predictive analysis indicates the sample leaf is "
         f"**{pred_class.lower()}** with mildew.")
-    
+
     return pred_prob, pred_class

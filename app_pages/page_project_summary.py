@@ -36,7 +36,7 @@ def page_project_summary_content():
         f"[Project README file](https://github.com/HumaIlyas/mildew- "
         f"detection-in-cherry-leaves/blob/main/README.md).")     
 
- 
+
     st.success(
         f"**Business requirements**\n"
         f"* The project has two business requirements:\n"
