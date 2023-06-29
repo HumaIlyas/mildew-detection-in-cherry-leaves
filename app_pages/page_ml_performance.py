@@ -12,13 +12,14 @@ def page_ml_performance_metrics_content():
     st.write("### ML Performance Metrics")
     version = 'v1'
 
-    st.write("### Train, Validation and Test Set: Labels Frequencies")
+    # Labels distribution on train, validation, and test Sets
+    st.write("### Train, Validation, and Test Set: Labels Frequencies")
 
     labels_distribution = plt.imread(f"outputs/{version}/labels_distribution.png")
-    st.image(labels_distribution, caption='Labels Distribution on Train, Validation and Test Sets')
+    st.image(labels_distribution, caption='Labels Distribution on Train, Validation, and Test Sets')
     st.write("---")
 
-
+    # To display model histroy
     st.write("## Model History")
     col1, col2 = st.beta_columns(2)
     with col1: 
@@ -29,5 +30,6 @@ def page_ml_performance_metrics_content():
         st.image(model_loss, caption='Model Training Losses')
     st.write("---")
 
+    # To display the generalised performance on test Set
     st.write("### Generalised Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
