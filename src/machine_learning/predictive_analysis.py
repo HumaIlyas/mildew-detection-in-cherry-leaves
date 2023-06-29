@@ -13,9 +13,9 @@ def plot_predictions_probabilities(pred_prob, pred_class):
     """
 
     prob_per_class = pd.DataFrame(
-            data=[0, 0],
-            index={'Powdery Mildew': 0, 'Healthy': 1}.keys(),
-            columns=['Probability']
+        data=[0, 0],
+        index={'Powdery Mildew': 0, 'Healthy': 1}.keys(),
+        columns=['Probability']
         )
     prob_per_class.loc[pred_class] = pred_prob
     for x in prob_per_class.index.to_list():
@@ -25,11 +25,11 @@ def plot_predictions_probabilities(pred_prob, pred_class):
     prob_per_class['Diagnostic'] = prob_per_class.index
     
     fig = px.bar(
-            prob_per_class,
-            x='Diagnostic',
-            y=prob_per_class['Probability'],
-            range_y=[0, 1],
-            width=500, height=400, template='seaborn')
+        prob_per_class,
+        x='Diagnostic',
+        y=prob_per_class['Probability'],
+        range_y=[0, 1],
+        width=500, height=400, template='seaborn')
     st.plotly_chart(fig)
 
 
