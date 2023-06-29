@@ -6,7 +6,6 @@ def page_project_summary_content():
     Contents of Project Summary
     """
     st.write("### Project Summary")
-    
     st.info(
         f"**General Information**\n"
         f"* Powdery Mildew is a fungal disease infecting herbaceous and woody "
@@ -34,15 +33,16 @@ def page_project_summary_content():
 
     st.write(
         f"* For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/HumaIlyas/mildew-detection-in-cherry-leaves/blob/main/README.md).")
+        f"[Project README file](https://github.com/HumaIlyas/mildew- "
+        f"detection-in-cherry-leaves/blob/main/README.md).")     
 
-
+ 
     st.success(
         f"**Business requirements**\n"
         f"* The project has two business requirements:\n"
         f"* The client is interested in conducting a study to visually "
         f"differentiate a cherry leaf that is healthy from one that contains "
         f"powdery mildew.\n"
-        f"* The client is interested in predicting if a cherry leaf is healthy "
-        f"or contains powdery mildew. "
+        f"* The client is interested in predicting if a cherry leaf is "
+        f"healthy or contains powdery mildew."
         )

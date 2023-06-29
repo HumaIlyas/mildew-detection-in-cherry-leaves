@@ -22,7 +22,7 @@ def page_ml_performance_metrics_content():
     # To display model histroy
     st.write("## Model History")
     col1, col2 = st.beta_columns(2)
-    with col1: 
+    with col1:
         model_acc = plt.imread(f"outputs/{version}/model_training_acc.png")
         st.image(model_acc, caption='Model Training Accuracy')
     with col2:
@@ -32,4 +32,5 @@ def page_ml_performance_metrics_content():
 
     # To display the generalised performance on test Set
     st.write("### Generalised Performance on Test Set")
-    st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
+    st.dataframe(pd.DataFrame(load_test_evaluation(version),
+                 index=['Loss', 'Accuracy']))
