@@ -22,8 +22,8 @@ def page_mildew_detector_content():
         )
 
     st.write(
-        f"* You can download a set of healthy and uninfected cells for live "
-        f"prediction. "
+        f"* You can download a set of healthy and mildew contained cherry "
+        f"leaves for live prediction. "
         f"You can download the images from "
         f"[here](https://www.kaggle.com/ccodeinstitute/cherry-leaves)"
         )
@@ -47,8 +47,9 @@ def page_mildew_detector_content():
             pred_prob, pred_class = load_model_and_predict(resized_img, version=version)
             plot_predictions_probabilities(pred_prob, pred_class)
 
-            df_report = df_report.append({"Name": image.name, 'Result': pred_class}, ignore_index=True)
-        
+            df_report = df_report.append({"Name": image.name, 'Result': pred_class}, 
+                                        ignore_index=True)
+        # Table with the image name and prediction results, and a download button to download the table
         if not df_report.empty:
             st.success("Analysis Report")
             st.table(df_report)
