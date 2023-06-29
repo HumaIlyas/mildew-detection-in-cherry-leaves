@@ -7,7 +7,7 @@ def page_project_hypotheses_content():
     """
     st.write("### Project Hypothesis and Validation")
     st.info(
-        "1. We suggest that images of Cherry leaves with powdery mildew will have enough differences compared to those without the disease in order to train the model with an image dataset. \n"
-        "2. A company analysis showed that it takes 30 minutes to evaluate a Cherry tree manually for signs of powdery Mildew. We propose that using image recognition will produce a vast time-benefit for the company and ensure that the detection of mildew is scalable. \n"
-        "3. Since the sample dataset provided contains images classified into infected vs uninfected, we suggest that binary classification will be the best way to determine the difference between infected and uninftected leaves."
+        "1. I suspect that mildew-contained cherry leaves have clear signs on their surface to differentiate them from the uninfected leaves. \n"
+        "2. We suggest that images of Cherry leaves with powdery mildew will have enough differences compared to those without the disease in order to train the model with an image dataset. \n"
+        "3. The sample dataset contains images classified as infected and uninfected leaves. The binary classification will be the best way to determine the difference between infected and uninftected leaves."
     )
