@@ -104,6 +104,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
         st.pyplot(fig=fig)
         # plt.show()
     
+    
     else:
         print("The label you selected doesn't exist.")
         print(f"The existing options are: {labels}")
