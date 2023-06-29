@@ -1,7 +1,7 @@
 # Image Identification
 
 **Mildew Detection in Cherry Leaves**
-The Battleships Game is based on the classic pen and paper game. More information about this game can be found at [Battleships Game](<https://en.wikipedia.org/wiki/Battleship_(game)>). This version of the game is designed for one player to play against the computer with randomly generated battleship locations on a grid. The player can try to beat the computer by hitting more batteleships of the computer before the computer hits the player's batteleships.
+Mildew Detection in Cherry Leaves is a study showing how to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew, and also the capability to predict if a cherry leaf is healthy or contains powdery mildew. [Powdery mildew](https://en.wikipedia.org/wiki/Powdery_mildew) is a fungal disease that affects a wide range of plants, and is caused by many different species of ascomycete fungi in the order Erysiphales. Powdery mildew is one of the easier plant diseases to identify, as its symptoms are quite distinctive. Infected plants display white powdery spots on the leaves and stems.
 
 ## [View live website](https://project-3-battleships-game.herokuapp.com/)
 
@@ -32,7 +32,7 @@ The Battleships Game is based on the classic pen and paper game. More informatio
 The main contents of the dataset are disussed in this section.
 
 - The dataset is taken from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves), and it is provided by Code Institute for the purpose of this portfolio project. I have created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-- The dataset contains more than 4 thousand images taken from the client's crop fields. About 50% of the images show healthy cherry leaves and 50% of the images show the cherry leaves containing powdery mildew. Powdery mildew a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio; therefore, the company is concerned about supplying the market with a compromised quality product.
+- The dataset contains 4+ thousand images taken from the client's crop fields. About 50% of the images show healthy cherry leaves and 50% of the images show the cherry leaves containing powdery mildew. Powdery mildew a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio; therefore, the company is concerned about supplying the market with a compromised quality product.
 
 ---
 
@@ -54,13 +54,8 @@ Project hypotheses and the methods to validate them are described below. The det
 1- I suspect that mildew-contained cherry leaves have clear signs on their surface to differentiate them from the uninfected leaves.
 - An average image and varability image study can help to investigate it.
 
-2- I suggest that images of mildew-contained cherry leaves will have enough differences compared with uninfected leaves in order to train the model with an image dataset.
-
+2- I suggest that images of mildew-contained cherry leaves will have several differences compared with uninfected leaves in order to train the model with an image dataset.
 - The dataset will be analysed using train, validation, and test techniques to investigate the accuracy of image identification.
-
-2- Based on the company analysis, the manual evaluation of a cherry tree takes 30 minutes for only a few samples of tree leaves to verify that the leaf tree is healthy or has powdery mildew. This study will not only be beneficial for the comapany to reduce the time required to visualize the disease, but also ensure that the detection of mildew is scalable.
-
-- The detailed validation process will be displayed in the dashboad.
 
 3- The sample dataset contains images classified as infected and uninfected leaves.
 - The binary classification will be the best way to determine the difference between infected and uninftected leaves.
