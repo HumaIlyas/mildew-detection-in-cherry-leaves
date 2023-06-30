@@ -1,24 +1,27 @@
 # Image Identification
 
-**Mildew Detection in Cherry Leaves**
+## Mildew Detection in Cherry Leaves
+
 Mildew Detection in Cherry Leaves is a study showing how to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew, and also the capability to predict if a cherry leaf is healthy or contains powdery mildew. [Powdery mildew](https://en.wikipedia.org/wiki/Powdery_mildew) is a fungal disease that affects a wide range of plants, and is caused by many different species of ascomycete fungi in the order Erysiphales. Powdery mildew is one of the easier plant diseases to identify, as its symptoms are quite distinctive. Infected plants display white powdery spots on the leaves and stems.
 
-## [View live website](https://project-3-battleships-game.herokuapp.com/)
+## [View live website](https://project-5.herokuapp.com/)
 
 ---
 
 ## Table of contents
+
 - [Image Identification](#image-identification)
+  - [Mildew Detection in Cherry Leaves](#mildew-detection-in-cherry-leaves)
   - [Dataset Content](#dataset-content)
   - [Business Requirements](#business-requirements)
-  - [Hypotheses and how to validate](#hypotheses-and-how-to-validate)
-  - [The rationale to map the business requirements](#the-rationale-to-map-the-business-requirements)
+  - [Hypotheses and Validation Methods](#hypotheses-and-validation-methods)
+  - [The Rationale to Map the Business Requirements](#the-rationale-to-map-the-business-requirements)
   - [ML Business Case](#ml-business-case)
   - [Dashboard Design](#dashboard-design)
     - [Project Summary](#project-summary)
     - [Leaf Visualiser](#leaf-visualiser)
     - [Mildew Detection](#mildew-detection)
-    - [Project Hypothesis](#project-hypothesis)
+    - [Project Hypotheses](#project-hypotheses)
     - [ML Performance Metrics](#ml-performance-metrics)
 - [Unfixed bugs](#unfixed-bugs)
 - [Deployment](#deployment)
@@ -32,7 +35,7 @@ Mildew Detection in Cherry Leaves is a study showing how to visually differentia
 The main contents of the dataset are disussed in this section.
 
 - The dataset is taken from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves), and it is provided by Code Institute for the purpose of this portfolio project. I have created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-- The dataset contains 4+ thousand images taken from the client's crop fields. About 50% of the images show healthy cherry leaves and 50% of the images show the cherry leaves containing powdery mildew. Powdery mildew a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio; therefore, the company is concerned about supplying the market with a compromised quality product.
+- The dataset contains +4 thousand images taken from the client's crop fields. About 50% of the images show healthy cherry leaves and 50% of the images show the cherry leaves containing powdery mildew. Powdery mildew a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio; therefore, the company is concerned about supplying the market with a compromised quality product.
 
 ---
 
@@ -48,23 +51,27 @@ The business requirements are:<br>
 
 ---
 
-## Hypotheses and how to validate
+## Hypotheses and Validation Methods
 
 Project hypotheses and the methods to validate them are described below. The detailed validation process will be displayed in the dashboad.<br>
 1- I suspect that mildew-contained cherry leaves have clear signs on their surface to differentiate them from the uninfected leaves.
+
 - An average image and varability image study can help to investigate it.
 
 2- I suggest that images of mildew-contained cherry leaves will have several differences compared with uninfected leaves in order to train the model with an image dataset.
+
 - The dataset will be analysed using train, validation, and test techniques to investigate the accuracy of image identification.
 
 3- The sample dataset contains images classified as infected and uninfected leaves.
-- The binary classification will be the best way to determine the difference between infected and uninftected leaves.
+
+- The binary classification will be the best method to determine the difference between infected and uninftected leaves.
 
 ---
 
-## The rationale to map the business requirements
+## The Rationale to Map the Business Requirements
 
-**The rationale to map the business requirements to the Data Visualisations and ML tasks**
+### The rationale to map the business requirements to the Data Visualisations and ML tasks
+
 The business requirements of image identification and a rationale to map them to the Data Visualisations and ML tasks are provided below.
 
 - **Business Requirement 1**: Data Visualization
@@ -86,29 +93,30 @@ The business requirements of image identification and a rationale to map them to
 - The model success metrics are:
   - Accuracy of 97% on the train set as well as on the test set.
 - The model output is defined as a flag, indicating if the leaf is infected with powdery mildew or not and the associated probability of being infected or not. The Farmy foods staff will do the inspection of the leaf as usual and upload the picture to the App. The prediction is made on the fly (not in batches).
-- **Heuristics:** Currently, the process is to manually verify if a given cherry tree contains powdery mildew or not. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. Although the staff require some training to detect the occurrance of disease in detail, the image analysis, sample collection and processing will be faster and could be performed by staff with less expertise.
-- The training data to fit the model come from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). This dataset contains about 4+ thousand images.
+- **Heuristics:** Currently, the process is to manually verify if a given cherry tree contains powdery mildew or not. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. Although the staff require some training to detect the occurrance of disease in detail, the image analysis, sample collection, and processing will be faster and could be performed by staff with less expertise.
+- The training data to fit the model come from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). This dataset contains about +4 thousand images.
   - Train data - target: infected or not; features: all images.
 
 ---
-## Dashboard Design 
-**Streamlit App User Interface**
+
+## Dashboard Design
+
+## Streamlit App User Interface
+
 The dashboard is consisted of five pages provided below.
 
 ### Project Summary
 
-**Project summary**
 This page will provide general information about the project, dataset used for data visualization and prediction, link for the additional information, and business requirements.
 
 - **General Information**
-  - Powdery Mildew is a fungal disease infecting herbaceous and woody plants, and can result in a low fruit yield in the case of Cherry Trees.
+  - [Powdery mildew](https://en.wikipedia.org/wiki/Powdery_mildew) is a fungal disease that affects a wide range of plants, and can result in a low fruit yield in the case of Cherry Trees. This disease is caused by many different species of ascomycete fungi in the order Erysiphales. Powdery mildew is one of the easier plant diseases to identify, as its symptoms are quite distinctive. Infected plants display white powdery spots on the leaves and stems.
   - Currently, the process is to manually verify if a given cherry tree contains powdery mildew or not. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or contains powdery mildew.
-  - According to the Conneticut Portal, powdery mildews are easily recognized by the white, powdery growth of the fungus on infected portions of the plant host. The powdery appearance results from the superficial growth of the fungus as thread-like strands (hyphae) over the plant surface and the production of chains of spores (conidia). Colonies vary in appearance from fluffy and white to sparse and gray.
 - **Project Dataset**
   - The available dataset contains +4 thousand images of cherry leaves taken from the client's crop fields:
   - 2104 images of cherry leaves which are healthy
   - 2104 images of cherry leaves containing powdery mildew
-  - For additional information about the data, please visit [Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
+  - For additional information about the dataset, please visit [Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
 - **Link to additional information**
   - Link will be provided for the additional information about the project.
 - **Business requirements**
@@ -118,7 +126,7 @@ This page will provide general information about the project, dataset used for d
 
 ### Leaf Visualiser
 
-This page will provide the details for the answer to business requirement 1.<br>
+This page will provide the details for the answer to business requirement 1- "The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew."<br>
 
 - Checkbox 1 - Difference between average and variability image
 - Checkbox 2 - Differences between average infected and average uninfected leaves.
@@ -133,15 +141,15 @@ This page will provide information about business requirement 2- "The client is 
 - Table with image name and prediction results.
 - Download button to download table.
 
-### Project Hypothesis
+### Project Hypotheses
 
-This page will describe project hypotheses, conclusion and methods used to validate the hypothesis.
+This page will provide block for each project hypothesis, conclusions, and methods used to validate the hypothesis.
 
 ### ML Performance Metrics
 
 This page will provide the details for the answer to business requirement 2.<br>
 
-- Label Frequencies for Train, Validation and Test Sets
+- Label Frequencies for Train, Validation, and Test Sets
 - Model History - Accuracy and Losses
 - Model evaluation result
 

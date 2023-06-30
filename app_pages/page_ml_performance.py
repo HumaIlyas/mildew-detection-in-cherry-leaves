@@ -13,7 +13,7 @@ def page_ml_performance_metrics_content():
     version = 'v1'
 
     # Labels distribution on train, validation, and test Sets
-    st.write("### Train, Validation, and Test Set: Labels Frequencies")
+    st.write("### Train, Validation, and Test Sets: Labels Frequencies")
 
     labels_distribution = plt.imread(f"outputs/{version}/labels_distribution.png")
     st.image(labels_distribution, caption='Labels Distribution on Train, Validation, and Test Sets')
