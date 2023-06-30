@@ -179,19 +179,19 @@ The steps for deployment were as follows:
 6. The deployment process should happen smoothly if all deployment files are fully functional
 7. Click now the button Open App on the top of the page to access your App.
 
-## [View live website](https://project-3-battleships-game.herokuapp.com/)
+## [View live website](https://project-5.herokuapp.com/)
 
 ---
 
 # Data Analysis and Machine Learning Libraries
 
-- Here you should main list the libraries used in the project and provide an example(s) of how you used these libraries.
+- Main list of the libraries used in the project and some example(s) of how these libraries were used.
 
 ---
 
 # Credits
 
-To complete the contents of Mildew detection in Cherry leaves, I learned coding and collected the information from different sources.
+To complete the contents of Image Identification: Mildew Detection in Cherry Leaves, I learned coding and collected the information from different sources.
 
 - Learned Python coding from [Code Institute](https://learn.codeinstitute.net/)
 - Used Code Institute student template [template](Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves)
@@ -202,7 +202,7 @@ To complete the contents of Mildew detection in Cherry leaves, I learned coding 
 ## Content
 
 - The leaf icons in the dashboard.py filw was taken from [Font Awesome](https://fontawesome.com/).
-- The details about the powdery mildew were found at [Conneticut Portal](https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Powdery-Mildew)
+- The details about the powdery mildew were found at [Powdery mildew](https://en.wikipedia.org/wiki/Powdery_mildew)
 
 ## Media
 
