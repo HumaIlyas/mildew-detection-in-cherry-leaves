@@ -8,7 +8,8 @@ from app_pages.page_mildew_detector import page_mildew_detector_content
 from app_pages.page_project_hypotheses import page_project_hypotheses_content
 from app_pages.page_ml_performance import page_ml_performance_metrics_content
 
-app = DashBoard(app_name="Mildew Detection in Cherry Leaves")
+# Create an instance of the app
+app = DashBoard(app_name="Mildew Detector")
 
 # Add app pages using .add_page()
 app.add_page("Project Summary", page_project_summary_content)
