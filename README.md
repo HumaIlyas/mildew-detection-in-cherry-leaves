@@ -198,6 +198,7 @@ To complete the contents of Image Identification: Mildew Detection in Cherry Lea
 - Collected information on good and bad coding practices from:
   - [Documenting Python Code](https://realpython.com/documenting-python-code/)
 - The description on the malaria detection in blood cells provided by the tutor of the Code Institute with [Malaria Detection](Code-Institute-Solutions/WalkthroughProject01) and app [Malaria Detector](https://malaria-predictor.onrender.com/) was useful as well as an inspiration to design [Image Identification](https://github.com/HumaIlyas/mildew-detection-image-identification).
+- The information on how to build keras tuning model for hyperparameter optimization was collected from [Tensorflow](https://www.tensorflow.org/tutorials/keras/keras_tuner) and [KerasTuner](https://keras.io/keras_tuner/)
 
 ## Content
 
