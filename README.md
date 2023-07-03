@@ -202,7 +202,7 @@ To complete the contents of Image Identification: Mildew Detection in Cherry Lea
 
 ## Content
 
-- The leaf icons in the dashboard.py filw was taken from [Font Awesome](https://fontawesome.com/).
+- The cherry with leaf icon in the dashboard.py file was taken from [Cherry Emoji](https://emojicombos.com/cherry).
 - The details about the powdery mildew were found at [Powdery mildew](https://en.wikipedia.org/wiki/Powdery_mildew)
 
 ## Media
