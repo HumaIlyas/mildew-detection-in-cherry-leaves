@@ -47,7 +47,7 @@ def page_mildew_detector_content():
             pred_prob, pred_class = load_model_and_predict(resized_img, version=version)
             plot_predictions_probabilities(pred_prob, pred_class)
 
-            df_report = df_report.append({"Name": image.name, 'Result': pred_class}, 
+            df_report = df_report.append({"Name": image.name, 'Result': pred_class},
                                         ignore_index=True)
         # Table with the image name and prediction results, and a download button to download the table
         if not df_report.empty:
