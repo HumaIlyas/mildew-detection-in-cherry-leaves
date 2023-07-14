@@ -1,7 +1,7 @@
 ---
-name: 'Business case/User story:'
+name: Business case/User story
 about: This is our default template
-title: "<TITLE>"
+title: 'Business case/User story: <TITLE>'
 labels: ''
 assignees: ''
 
